@@ -13,5 +13,6 @@ export default defineNuxtConfig({
     "@nuxt/scripts",
     "@nuxt/test-utils",
     "@vueuse/nuxt",
+    "vuetify-nuxt-module",
   ],
 });
