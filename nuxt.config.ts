@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  css: ["@/assets/css/globals.scss"],
   modules: [
     "@nuxt/eslint",
     "@nuxt/fonts",
@@ -15,4 +16,12 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "vuetify-nuxt-module",
   ],
+  vuetify: {
+    moduleOptions: {
+      disableVuetifyStyles: true,
+      styles: {
+        configFile: "./assets/css/components.scss",
+      },
+    },
+  },
 });

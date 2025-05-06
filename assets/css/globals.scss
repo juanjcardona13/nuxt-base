@@ -1,0 +1,14 @@
+// $rounded-override: (
+//   "pill": var(--v-rounded-pill),
+// );
+
+$body-font-family-override: var(--v-body-font-family, "Roboto");
+
+@use "vuetify" with (
+  // Global Vuetify SASS variable overrides.  For example:
+  // $utilities: false,
+  // $reset: false,
+  // $color-pack: false
+  // $rounded: $rounded-override,
+  $body-font-family: $body-font-family-override
+);
