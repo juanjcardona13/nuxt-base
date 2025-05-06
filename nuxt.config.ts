@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     "@nuxt/test-utils",
     "@vueuse/nuxt",
     "vuetify-nuxt-module",
+    "@nuxtjs/i18n",
   ],
   vuetify: {
     moduleOptions: {
@@ -23,5 +24,18 @@ export default defineNuxtConfig({
         configFile: "./assets/css/components.scss",
       },
     },
+  },
+  i18n: {
+    defaultLocale: "en",
+    locales: [
+      {
+        code: "en",
+        name: "English",
+      },
+      {
+        code: "nl",
+        name: "Nederlands",
+      },
+    ],
   },
 });
