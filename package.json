@@ -3,6 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "lint:eslint": "eslint .",
+    "lintfix": "eslint . --fix && prettier --write --list-different .",
+    "lint:prettier": "prettier . --write",
+    "lint:eslintfix": "eslint . --fix",
+    "lint": "yarn lint:eslintfix && yarn lint:prettier",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -24,6 +29,9 @@
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "devDependencies": {
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10"
   }
