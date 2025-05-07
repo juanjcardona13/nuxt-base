@@ -51,4 +51,11 @@ export default defineNuxtConfig({
       Roboto: [400, 700],
     },
   },
+  runtimeConfig: {
+    public: {
+      mixpanelToken: "", //45b8ae293a1ecb136eafa2927e95ecd3
+      posthogPublicKey: "", //phc_P3zBtM9TOGjECyzlhR0UUUs3lvyAUhiYkrcURMopnCg
+      posthogHost: "https://us.i.posthog.com",
+    },
+  },
 });
