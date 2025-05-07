@@ -847,6 +847,20 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.2.tgz#1860473de7dfa1546767448f333db80cb0ff2161"
   integrity sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==
 
+"@iconify-json/circle-flags@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@iconify-json/circle-flags/-/circle-flags-1.2.6.tgz#492e76422d7860cefa0b72a0e561dd02dc68bf42"
+  integrity sha512-UR7hL1nxOFWDVlSTuAmssyAzm3U1PuE5CMVLlahuVsnm1l7Q2b29+jUaSLTDCFqrpvdeWifCmj4C6Ojkj+4uww==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/mdi@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.2.3.tgz#5e4ee9d8c8aaad04381c8cc6c6edbe3327f031b5"
+  integrity sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/collections@^1.0.536":
   version "1.0.545"
   resolved "https://registry.yarnpkg.com/@iconify/collections/-/collections-1.0.545.tgz#ccd27b562b8979407ca170701e1966def80371a1"
