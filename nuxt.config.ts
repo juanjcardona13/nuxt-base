@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "vuetify-nuxt-module",
     "@nuxtjs/i18n",
+    "@nuxtjs/google-fonts",
   ],
   vuetify: {
     moduleOptions: {
@@ -37,5 +38,16 @@ export default defineNuxtConfig({
         name: "Nederlands",
       },
     ],
+  },
+  fonts: {
+    /**
+     * Review periodically
+     * https://github.com/nuxt/fonts/issues/57
+     */
+  },
+  googleFonts: {
+    families: {
+      Roboto: [400, 700],
+    },
   },
 });
