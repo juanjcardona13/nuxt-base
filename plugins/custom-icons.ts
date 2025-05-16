@@ -2,13 +2,6 @@ import { h } from "vue";
 import { Icon } from "#components";
 import type { IconSet, IconProps, IconAliases } from "vuetify";
 
-const nuxtIcon: IconSet = {
-  component: (props: IconProps) => {
-    const { tag, icon, mode, ...rest } = props as IconProps & { mode: string };
-    return h(tag, rest, [h(Icon, { name: icon, mode })]);
-  },
-};
-
 export const aliases = <IconAliases>{
   email: "i-mdi:calendar",
   collapse: "i-mdi:chevron-up",
@@ -49,6 +42,14 @@ export const aliases = <IconAliases>{
   plus: "i-mdi:plus",
   minus: "i-mdi:minus",
   calendar: "i-mdi:calendar",
+};
+
+const nuxtIcon: IconSet = {
+  component: (props: IconProps) => {
+    const { tag, icon, mode, ...rest } = props as IconProps & { mode: string };
+    const iconName = aliases[icon as keyof typeof aliases] || icon;
+    return h(tag, rest, [h(Icon, { name: iconName, mode })]);
+  },
 };
 
 export default defineNuxtPlugin((nuxtApp) => {
