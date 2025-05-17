@@ -13,8 +13,7 @@ export class YupProvider implements ValidationProvider {
     }
 
     try {
-      const result = schema.validateSyncAt(path, value);
-      console.log("validateField result from yup", result);
+      schema.validateSyncAt(path, value);
       return true;
     } catch (error: unknown) {
       if (error instanceof yup.ValidationError) {
@@ -25,12 +24,10 @@ export class YupProvider implements ValidationProvider {
   }
 
   validateObject(schema: yup.AnySchema, object: unknown): boolean {
-    console.log("validateObject from yup", schema, object);
     if (!schema) {
       throw new Error("Schema is required");
     }
-    const result = schema.validate(object);
-    console.log("validateObject result from yup", result);
+    schema.validate(object);
     return true;
   }
 }
