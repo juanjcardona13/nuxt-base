@@ -16,8 +16,8 @@ export default defineNuxtConfig({
     "@nuxt/test-utils",
     "@vueuse/nuxt",
     "vuetify-nuxt-module",
-    "@nuxtjs/i18n",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/i18n",
   ],
   vuetify: {
     moduleOptions: {
