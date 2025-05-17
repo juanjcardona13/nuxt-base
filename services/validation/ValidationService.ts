@@ -90,15 +90,19 @@ export class ValidationService<T extends string = string> {
     return this.providerMap.get(this.defaultProvider) || this.nullProvider;
   }
 
-  validateField(
+  getSchemaShape = (schema: unknown): Record<string, unknown> => {
+    return this.getDefaultProvider().getSchemaShape(schema);
+  };
+
+  validateField = (
     schema: unknown,
     path: string,
     value: unknown
-  ): boolean | string {
+  ): boolean | string => {
     return this.getDefaultProvider().validateField(schema, path, value);
-  }
+  };
 
-  validateObject(schema: unknown, object: unknown): boolean {
+  validateObject = (schema: unknown, object: unknown): boolean => {
     return this.getDefaultProvider().validateObject(schema, object);
-  }
+  };
 }

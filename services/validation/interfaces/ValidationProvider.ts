@@ -1,4 +1,6 @@
 export interface ValidationProvider {
+  getSchemaShape(schema: unknown): Record<string, unknown>;
+
   validateField(
     schema: unknown,
     path: string,

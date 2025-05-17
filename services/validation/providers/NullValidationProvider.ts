@@ -7,6 +7,10 @@ export class NullValidationProvider implements ValidationProvider {
     this.name = name;
   }
 
+  getSchemaShape(_schema: unknown): Record<string, unknown> {
+    return {};
+  }
+
   validateField(
     _schema: unknown,
     path: string,
